@@ -141,6 +141,14 @@ available to its users. See [LICENSE](LICENSE) for the full terms.
 这是一个用于 Netflix 播放页**语言学习**的 Chrome MV3 扩展。它在原生字幕之上叠加
 显示第二条官方字幕轨,让你可以同时用两种语言观看。
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="上方为 Netflix 原生日文字幕,下方为 MultiSubtitle 中文叠加层" width="640">
+</p>
+
+<p align="center">
+  <em>Netflix 原生日文字幕(上)与 MultiSubtitle 中文叠加层(下)。</em>
+</p>
+
 上方截图就是效果:Netflix 原生日文字幕保留在上方,MultiSubtitle 把中文字幕叠加
 在下方。
 
