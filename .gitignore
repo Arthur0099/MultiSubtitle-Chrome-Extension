@@ -1,0 +1,24 @@
+.DS_Store
+
+# Local browser profile used by scripts/test-netflix.js.
+.test-profile/
+
+# Local environment files.
+.env
+.env.*
+!.env.example
+
+# Dependencies and package manager caches.
+node_modules/
+.npm/
+.pnpm-store/
+
+# Build and coverage output.
+dist/
+build/
+coverage/
+
+# Local logs and temporary files.
+*.log
+*.tmp
+*.swp

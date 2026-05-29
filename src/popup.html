@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Subtitle MVP</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Subtitle MVP</h1>
+        <span id="video" class="status">checking</span>
+      </header>
+
+      <dl class="summary">
+        <div>
+          <dt>Segments</dt>
+          <dd id="segments">0</dd>
+        </div>
+        <div>
+          <dt>URLs</dt>
+          <dd id="url-count">0 / 0</dd>
+        </div>
+        <div>
+          <dt>Time</dt>
+          <dd id="time">-</dd>
+        </div>
+        <div>
+          <dt>Captured</dt>
+          <dd id="capture">none</dd>
+        </div>
+      </dl>
+
+      <label class="field">
+        <span>Target subtitle</span>
+        <select id="target-lang">
+          <option value="">Auto</option>
+        </select>
+      </label>
+
+      <button id="toggle" type="button">Overlay</button>
+      <div class="actions">
+        <button id="fetch" type="button" class="secondary">Tracks</button>
+        <button id="fetch-timed-text" type="button" class="secondary">Fetch</button>
+      </div>
+
+      <div class="debug-head">
+        <span id="debug">waiting</span>
+        <button id="debug-toggle" type="button" class="ghost">Details</button>
+      </div>
+
+      <div id="debug-panel" hidden>
+        <section>
+          <h2>Captured candidates</h2>
+          <ol id="candidates"></ol>
+        </section>
+        <section>
+          <h2>Subtitle hints</h2>
+          <ol id="hints"></ol>
+        </section>
+        <section>
+          <h2>Fetched bodies</h2>
+          <ol id="bodies"></ol>
+        </section>
+        <section>
+          <h2>Manifest debug</h2>
+          <ol id="manifest-debug"></ol>
+        </section>
+        <section>
+          <h2>Parsed JSON hints</h2>
+          <ol id="parsed-json-hints"></ol>
+        </section>
+        <section>
+          <h2>Text tracks</h2>
+          <ol id="text-tracks"></ol>
+        </section>
+        <section>
+          <h2>Timed text URLs</h2>
+          <ol id="timed-text-urls"></ol>
+        </section>
+        <section>
+          <h2>Timed text fetches</h2>
+          <ol id="timed-text-fetches"></ol>
+        </section>
+        <section>
+          <h2>Visible subtitle menu labels</h2>
+          <ol id="subtitle-menu-labels"></ol>
+        </section>
+      </div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
